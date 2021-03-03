@@ -16,6 +16,19 @@ finish-args:
 modules:
 
 - name: gtk-2.24
+  cleanup: [
+        "/cache",
+        "/man",
+        "/share/aclocal",
+        "/share/devhelp",
+        "/include",
+        "/lib/pkgconfig",
+        "/share/gtk-doc",
+        "/share/man",
+        "/lib/*.a",
+        "*.a",
+        "*.la"
+    ]
   sources:
   - type: archive
     url: https://download.gnome.org/sources/gtk+/2.24/gtk+-2.24.32.tar.xz
@@ -33,6 +46,19 @@ modules:
     sha256: 67c74d94196b153b774ab9f89b2fa6c6ba79352407037c8c14d5aeb334e959cd
 
 - name: gnome-themes-extra
+  cleanup: [
+        "/cache",
+        "/man",
+        "/share/aclocal",
+        "/share/devhelp",
+        "/include",
+        "/lib/pkgconfig",
+        "/share/gtk-doc",
+        "/share/man",
+        "/lib/*.a",
+        "*.a",
+        "*.la"
+    ]
   buildsystem: autotools
   sources:
   - type: archive
@@ -40,6 +66,19 @@ modules:
     sha256: 7c4ba0bff001f06d8983cfc105adaac42df1d1267a2591798a780bac557a5819
  
 - name: mhwaveedit
+  cleanup: [
+        "/cache",
+        "/man",
+        "/share/aclocal",
+        "/share/devhelp",
+        "/include",
+        "/lib/pkgconfig",
+        "/share/gtk-doc",
+        "/share/man",
+        "/lib/*.a",
+        "*.a",
+        "*.la"
+    ]
   buildsystem: simple
   sources:
   - type: git
