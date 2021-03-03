@@ -44,6 +44,8 @@ modules:
   sources:
   - type: git
     url: https://github.com/magnush/mhwaveedit
+    commit: 87b89f818a54285c99c4be861790725ed8480859
+    
   build-commands:
     - chmod +x gitcompile.sh
     - ./gitcompile.sh  --prefix=/app
