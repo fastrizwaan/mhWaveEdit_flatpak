@@ -53,6 +53,6 @@ modules:
   post-install:
 
    - install -Dm644 ${FLATPAK_DEST}/share/icons/hicolor/64x64/apps/mhwaveedit.png
-     ${FLATPAK_DEST}/share/icons/hicolor/64x64/apps/io.github.mhwaveedit.png
+     ${FLATPAK_DEST}/share/icons/hicolor/64x64/apps/io.github.mhWaveEdit.png
    - desktop-file-edit --set-icon=io.github.mhWaveEdit 
-     /app/share/applications/mhwaveedit.desktop
+     /app/share/applications/mhWaveEdit.desktop
