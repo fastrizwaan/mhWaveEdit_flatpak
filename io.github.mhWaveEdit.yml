@@ -4,6 +4,10 @@ runtime: org.freedesktop.Platform
 runtime-version: '20.08'
 sdk: org.freedesktop.Sdk
 command: mhwaveedit
+
+default-branch: stable
+separate-locales: false
+
 rename-desktop-file: mhwaveedit.desktop
 
 finish-args:
