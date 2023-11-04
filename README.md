@@ -1,19 +1,13 @@
 # mhWaveEdit_flatpak
 flatpak of Gtk2 based simple audio file editor, can edit wave, mp3, ogg, flac etc. sound and music files. Extract and Delete from Audio/Music files.
 
-#### install flathub repo and freedesktop sdk 20.08
+#### install flathub repo and freedesktop sdk 23.08
 ```
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub org.freedesktop.Sdk/x86_64/20.08
+flatpak install flathub org.freedesktop.Sdk/x86_64/23.08
 ```
 
-### Already built flatpak install
- 
-```
-https://github.com/fastrizwaan/mhWaveEdit_flatpak/raw/main/mhWaveEdit.flatpak
-flatpak install mhWaveEdit.flatpak
-flatpak run io.github.mhWaveEdit
-```
+
 
 #### clone and build flatpak from yml
 ```
@@ -37,5 +31,15 @@ flatpak --user remote-add --no-gpg-verify "mhWaveEdit" "repo"
 flatpak build-bundle "repo" "mhWaveEdit.flatpak" io.github.mhWaveEdit  --runtime-repo="https://flathub.org/repo/flathub.flatpakrepo"
 
 flatpak --user install mhWaveEdit.flatpak
+flatpak run io.github.mhWaveEdit
+```
+
+
+
+### Already built flatpak install
+old flatpak built with freedesktop 20.08 
+```
+https://github.com/fastrizwaan/mhWaveEdit_flatpak/raw/main/mhWaveEdit.flatpak
+flatpak install mhWaveEdit.flatpak
 flatpak run io.github.mhWaveEdit
 ```
