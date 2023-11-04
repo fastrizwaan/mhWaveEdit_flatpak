@@ -7,6 +7,14 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 flatpak install flathub org.freedesktop.Sdk/x86_64/20.08
 ```
 
+### Already built flatpak install
+ 
+```
+https://github.com/fastrizwaan/mhWaveEdit_flatpak/raw/main/mhWaveEdit.flatpak
+flatpak install mhWaveEdit.flatpak
+flatpak run io.github.mhWaveEdit
+```
+
 #### clone and build flatpak from yml
 ```
 git clone https://github.com/fastrizwaan/mhWaveEdit_flatpak.git
